@@ -1,0 +1,96 @@
+/* Desktop view */
+
+.Header {
+  display: flex;
+  background: rgb(5, 46, 133);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  height: 80px;
+  width: auto;
+}
+
+.LogoNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.LogoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 50px;
+}
+
+.Logo {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.NavOptions {
+  padding-left: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  padding: 16px;
+  column-gap: 15px;
+  list-style-type: none;
+}
+.Option :hover {
+  color: white;
+}
+
+.Link {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+}
+
+/*mobile view */
+
+@media (max-width: 648px) {
+  .Header {
+    padding: 0px 10px;
+  }
+  .Logo {
+    width: 45px;
+    height: 45px;
+  }
+  .NavOptions {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    flex-direction: column;
+    list-style-type: none;
+    grid-gap: 0px;
+  }
+  .NavOptions.Active {
+    background: skyblue;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 4;
+    align-content: center;
+    padding-left: 0px;
+  }
+  .Option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vw;
+    padding: 30px 0px;
+  }
+  .MenuIcon {
+    width: 45px;
+    height: 45px;
+  }
+  .MobileMenu {
+    display: block;
+  }
+}

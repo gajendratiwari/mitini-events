@@ -1,0 +1,129 @@
+.Banner {
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  background-color: #111111;
+  color: rgba(255, 255, 255, 0.5);
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+
+  display: flex;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  background-image: url("../../../../assets/images/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 0;
+  height: 35rem !important;
+  min-height: 35rem;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.Banner > .Inner {
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  opacity: 1;
+  position: relative;
+  z-index: 3;
+}
+.h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.A {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+.A:hover {
+  color: #ffffff;
+}
+
+.P {
+  font-size: 2.25rem;
+}
+
+.Banner:before {
+  -moz-transition-delay: 1.25s;
+  -webkit-transition-delay: 1.25s;
+  -ms-transition-delay: 1.25s;
+  transition-delay: 1.25s;
+  background: #111111;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0.45;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.Banner:after {
+  background: linear-gradient(135deg, #041bee 0%, #111111 74%);
+  content: " ";
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  z-index: 1;
+}
+.Banner.small {
+  height: 30vh !important;
+  min-height: 30vh;
+}
+
+@media screen and (max-width: 736px) {
+  .Banner {
+    height: auto !important;
+    min-height: 0;
+    padding: 4rem 2rem 4rem 2rem;
+  }
+
+  .h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0;
+  }
+  .P {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .P {
+    font-size: 1rem;
+  }
+}
+.Inner {
+  -moz-transform: scale(0.99);
+  -webkit-transform: scale(0.99);
+  -ms-transform: scale(0.99);
+  transform: scale(0.99);
+  opacity: 0;
+}
+.Inner {
+  margin: 0 auto;
+  width: 75rem;
+  max-width: calc(100% - 6rem);
+}
+@media screen and (max-width: 480px) {
+  .Inner {
+    max-width: calc(100% - 3rem);
+  }
+}

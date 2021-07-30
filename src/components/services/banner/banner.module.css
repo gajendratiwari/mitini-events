@@ -1,0 +1,86 @@
+.Banner {
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  background-color: #111111;
+  color: rgba(255, 255, 255, 0.5);
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+
+  display: flex;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  background-image: url("../../../assets/images/contactDisplay.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 0;
+  height: 45rem !important;
+  min-height: 35rem;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.Banner:before {
+  -moz-transition-delay: 1.25s;
+  -webkit-transition-delay: 1.25s;
+  -ms-transition-delay: 1.25s;
+  transition-delay: 1.25s;
+  background: #111111;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0.45;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.Banner:after {
+  background: linear-gradient(135deg, #041bee 0%, #111111 74%);
+  content: " ";
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 769px) {
+  .Banner {
+    height: auto !important;
+
+    padding: 4rem 2rem 4rem 2rem;
+    background-size: cover;
+    background-size: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Banner {
+    height: auto !important;
+
+    padding: 4rem 2rem 4rem 2rem;
+    background-size: cover;
+    background-size: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .Banner {
+    height: auto !important;
+
+    padding: 4rem 2rem 4rem 2rem;
+    background-size: cover;
+    background-size: 100%;
+  }
+}

@@ -1,0 +1,243 @@
+.H1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 3rem;
+  font-weight: bolder;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 6rem 1rem 6rem;
+  background-image: url("../../../assets/images/servicetitlebg.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.Container {
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  background-color: #111111;
+  color: rgba(255, 255, 255, 0.5);
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  background-image: url("../../../assets/images/contactDisplay.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 0;
+
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.Container:before {
+  -moz-transition-delay: 1.25s;
+  -webkit-transition-delay: 1.25s;
+  -ms-transition-delay: 1.25s;
+  transition-delay: 1.25s;
+  background: #111111;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0.45;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.Container:after {
+  /* background: linear-gradient(135deg, #041bee 0%, #050000 74%); */
+  content: " ";
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  z-index: 1;
+}
+
+.FlexBox {
+  margin: 0;
+  width: 100%;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -moz-align-items: -moz-stretch;
+  -webkit-align-items: -webkit-stretch;
+  -ms-align-items: -ms-stretch;
+  align-items: stretch;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+.FlexBox > * {
+  -moz-flex-shrink: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-shrink: 1;
+  flex-shrink: 1;
+  -moz-flex-grow: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-grow: 0;
+  flex-grow: 0;
+}
+.FlexBox > * {
+  width: 100%;
+}
+.FlexBox > * {
+  padding: 1.5rem;
+  width: calc(45% + 1rem);
+}
+.FlexBox > :nth-child(-n + 3) {
+  padding-top: 0;
+}
+.FlexBox > :nth-last-child(-n + 3) {
+  padding-bottom: 0;
+}
+.FlexBox > :nth-child(3n + 1) {
+  padding-left: 0;
+}
+.FlexBox > :nth-child(3n) {
+  padding-right: 0;
+}
+.FlexBox > :nth-child(3n + 1),
+.FlexBox > :nth-child(3n) {
+  width: calc(45% + -0.5rem);
+}
+
+.Heading {
+  padding: 1rem 6rem 1rem 6rem;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 2rem;
+  height: 100px;
+  color: white;
+}
+.LocationImage {
+  height: 400px;
+  width: 100%;
+  padding: 0 6rem 1rem 6rem;
+}
+.Paragraph {
+  padding: 0 6rem 1rem 6rem;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+@media screen and (max-width: 1024px) {
+  .FlexBox > * {
+    width: 100%;
+  }
+  .FlexBox > * {
+    padding: 1rem;
+    width: calc(33.3333333333% + 0.6666666667rem);
+  }
+  .FlexBox > :nth-child(-n + 3) {
+    padding-top: 1rem;
+  }
+  .FlexBox > :nth-last-child(-n + 3) {
+    padding-bottom: 1rem;
+  }
+  .FlexBox > :nth-child(3n + 1) {
+    padding-left: 1rem;
+  }
+  .FlexBox > :nth-child(3n) {
+    padding-right: 1rem;
+  }
+  .FlexBox > :nth-child(3n + 1),
+  .FlexBox > :nth-child(3n) {
+    padding: 1rem;
+    width: calc(100% + 2rem);
+  }
+  .FlexBox > * {
+    padding: 1rem;
+    width: calc(50% + 1rem);
+  }
+  .FlexBox > :nth-child(-n + 2) {
+    padding-top: 1rem;
+  }
+  .FlexBox > :nth-last-child(-n + 2) {
+    padding-bottom: 1rem;
+  }
+  .FlexBox > :nth-child(2n + 1) {
+    padding-left: 1rem;
+  }
+  .FlexBox > :nth-child(2n) {
+    padding-right: 1rem;
+  }
+  .FlexBox > :nth-child(2n + 1),
+  .FlexBox > :nth-child(2n) {
+    padding: 1rem;
+    width: calc(100% + 2rem);
+  }
+  .FlexBox > * {
+    padding: 1rem;
+    width: calc(100% + 2rem);
+  }
+  .FlexBox > :nth-child(-n + 1) {
+    padding-top: 0;
+  }
+  .FlexBox > :nth-last-child(-n + 1) {
+    padding-bottom: 0;
+  }
+  .FlexBox > :nth-child(1n + 1) {
+    padding-left: 0;
+  }
+  .FlexBox > :nth-child(1n) {
+    padding-right: 0;
+  }
+  .FlexBox > :nth-child(1n + 1),
+  .FlexBox > :nth-child(1n) {
+    width: calc(100% + 1rem);
+  }
+
+  .Container {
+    height: auto !important;
+
+    padding: 4rem 2rem 4rem 2rem;
+    background-size: cover;
+    background-size: 100%;
+  }
+}
+@media screen and (max-width: 769px) {
+  .Container {
+    height: auto !important;
+
+    padding: 4rem 2rem 4rem 2rem;
+    background-size: cover;
+    background-size: 100%;
+  }
+  .Heading {
+    height: 150px;
+    color: white;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Container {
+    height: auto !important;
+
+    padding: 4rem 2rem 4rem 2rem;
+    background-size: cover;
+    background-size: 100%;
+  }
+}
