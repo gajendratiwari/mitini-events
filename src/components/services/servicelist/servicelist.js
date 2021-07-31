@@ -9,7 +9,10 @@ class ServiceList extends Component {
   render() {
     return (
       <div>
-        <Header />
+        {data.map((data, key) => {
+          return <Header key={key} data={data.services} />;
+        })}
+
         <div>
           {data.map((data, key) => {
             return (

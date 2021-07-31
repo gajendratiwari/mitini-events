@@ -53,14 +53,6 @@
   width: 100%;
   text-align: center;
   padding: 1rem 6rem 1rem 6rem;
-  background-image: url("../../../assets/images/servicetitlebg.jpg");
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
 }
 @media screen and (max-width: 980px) {
   .FlexItem {

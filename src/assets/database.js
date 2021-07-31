@@ -157,7 +157,7 @@ const data = [
         heading: "Location",
         details:
           "We are located in Gharipatan and cater to Pokhara and surrounding regions.",
-        image: "./images/location.jpg",
+        image: "./images/location.jpeg",
       },
     ],
     id: 11,
@@ -165,7 +165,7 @@ const data = [
       {
         heading: "CONTACT US",
         details:
-          "Contact us on ********** or mitinievents@gmail.com or click the link below to complete our online contact form and we'll get back to you.",
+          "Contact us on +9779813965346, +9779861639210  or mitinievents@gmail.com or click the link below to complete our online contact form and we'll get back to you.",
       },
     ],
     id: 12,
@@ -174,7 +174,7 @@ const data = [
         heading: "Give us a Call - let's chat about your event",
         details:
           "Contact us and together, we can make sure you get the management and styling services you need to make your event a success.",
-        phone: "0414 195 202",
+        phone: "+9779813965346, +9779861639210",
         email: "mitinievents@gmail.com",
         title: "MEतिनी Events",
         address: "Gharipatan-7, Pokhara, Nepal",

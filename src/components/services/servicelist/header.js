@@ -1,20 +1,20 @@
 import React from "react";
 import classes from "./servicelist.module.css";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <div>
-      <div className={classes.Header}>
-        <div>
-          <div className={classes.Heading}>OUR SERVICES INCLUDE</div>
+      {props.data.map((value, key) => {
+        return (
+          <div className={classes.Header} key={key}>
+            <div>
+              <div className={classes.Heading}>{value.heading}</div>
 
-          <div className={classes.Description}>
-            We offer a complete conference and event management service covering
-            all aspects detailed below, but are also happy to tailor a package
-            that offers only what you need, to support your inhouse team.
+              <div className={classes.Description}>{value.description}</div>
+            </div>
           </div>
-        </div>
-      </div>
+        );
+      })}
     </div>
   );
 };

@@ -23,12 +23,12 @@ const Footer = () => {
               <h4 className={classes.h4}>Company</h4>
               <ul className={classes.List}>
                 <li className={classes.ListItem}>
-                  <NavLink className={classes.A} to="/about">
+                  <NavLink className={classes.A} to="/">
                     About Us
                   </NavLink>
                 </li>
                 <li className={classes.ListItem}>
-                  <NavLink className={classes.A} to="/services">
+                  <NavLink className={classes.A} to="/service">
                     Our Services
                   </NavLink>
                 </li>
@@ -64,10 +64,7 @@ const Footer = () => {
             </ul>
           </section>
         </div>
-        <div className={classes.Copyright}>
-          &copy; MEतिनी Events
-          {/* <a href="#">Coverr</a>. */}
-        </div>
+        <div className={classes.Copyright}>&copy; MEतिनी Events</div>
       </div>
     </footer>
   );

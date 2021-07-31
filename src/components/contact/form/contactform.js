@@ -91,9 +91,9 @@ class ContactForm extends React.Component {
       errors["date"] = "Please enter correct date.";
     }
 
-    if (typeof input["phone"] !== "undefined") {
+    if (typeof input["date"] !== "undefined") {
       var pattern = new RegExp(
-        /^(0?[1-9]|1[0-2])[\/](0?[1-9]|[1-2][0-9]|3[01])[\/]\d{4}$/
+        /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/
       );
       if (!pattern.test(input["date"])) {
         isValid = false;

@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./contactdetails.module.css";
 import { Image } from "react-bootstrap";
+
 const ContactDetails = (props) => {
   return (
     <div>
@@ -16,6 +17,8 @@ const ContactDetails = (props) => {
                 <span> Phone: {value.phone}</span>
                 <br />
                 <span>Email: {value.email}</span>
+                <br />
+                <br></br>
                 <strong>{value.title}</strong> <br></br> {value.address}
               </p>
             </div>

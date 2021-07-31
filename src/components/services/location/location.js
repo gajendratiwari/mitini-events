@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import classes from "./location.module.css";
 import data from "../../../assets/database";
-
+import { Image } from "react-bootstrap";
 import Button from "../../button/button";
 
 class Location extends Component {
@@ -18,16 +18,16 @@ class Location extends Component {
                 return (
                   <div className={classes.Row}>
                     <div className={classes.Column}>
-                      <img className={classes.LocationImage} src={data.image} />
+                      <Image
+                        className={classes.LocationImage}
+                        src={data.image}
+                      />
                     </div>
                     <div className={classes.Column}>
                       <div className={classes.Content}>
                         <div className={classes.Text}>
-                          <h1 className={classes.Heading1}>LOCATION</h1>
-                          <p className={classes.P1}>
-                            We are located in Gharipatan and cater to Pokhara
-                            and surrounding regions.
-                          </p>
+                          <h1 className={classes.Heading1}>{data.heading}</h1>
+                          <p className={classes.P1}>{data.details}</p>
                         </div>
 
                         <div className={classes.Button}>

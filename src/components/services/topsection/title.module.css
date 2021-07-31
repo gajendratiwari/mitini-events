@@ -5,14 +5,6 @@
   width: 100%;
   text-align: center;
   padding: 1rem 6rem 1rem 6rem;
-  background-image: url("../../../assets/images/servicetitlebg.jpg");
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
 }
 .Container {
   -ms-flex-align: center;
@@ -171,7 +163,7 @@
   }
   .FlexBox > * {
     padding: 1rem;
-    width: calc(50% + 1rem);
+    width: calc(100% + 1rem);
   }
   .FlexBox > :nth-child(-n + 2) {
     padding-top: 1rem;
@@ -227,6 +219,21 @@
     background-size: cover;
     background-size: 100%;
   }
+
+  .FlexBox > * {
+    -moz-flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-shrink: 0;
+    flex-shrink: 0;
+    -moz-flex-grow: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-grow: 0;
+    flex-grow: 0;
+  }
+  .FlexBox > :nth-child(3n + 1),
+  .FlexBox > :nth-child(3n) {
+    width: 100%;
+  }
   .Heading {
     height: 150px;
     color: white;
@@ -239,5 +246,20 @@
     padding: 4rem 2rem 4rem 2rem;
     background-size: cover;
     background-size: 100%;
+  }
+
+  .FlexBox > * {
+    -moz-flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-shrink: 0;
+    flex-shrink: 0;
+    -moz-flex-grow: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-grow: 0;
+    flex-grow: 0;
+  }
+  .FlexBox > :nth-child(3n + 1),
+  .FlexBox > :nth-child(3n) {
+    width: 100%;
   }
 }

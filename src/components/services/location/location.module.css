@@ -16,13 +16,12 @@
 .LocationImage {
   height: 400px;
   width: 100%;
-  padding-left: 0%;
-  padding-bottom: 0%;
 }
 
 .Content {
   text-align: center;
-  padding: 4rem 0 0 3rem;
+
+  padding: 4rem 0 0 2rem;
 }
 .Heading1 {
   font-size: 3rem;
@@ -43,14 +42,6 @@
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 2rem;
   font-weight: bolder;
-  background-image: url("../../../assets/images/pokhara.jpg");
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
 }
 
 @media screen and (max-width: 736px) {
