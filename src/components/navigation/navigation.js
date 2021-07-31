@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ReactComponent as CloseMenu } from "../../assets/x.svg";
 import { ReactComponent as MenuIcon } from "../../assets/menu.svg";
+import { Image } from "react-bootstrap";
 
 import MitiniLogo from "../../assets/images/logo.png";
 import classes from "./navigation.module.css";
@@ -16,7 +17,7 @@ const Header = () => {
         <div className={classes.LogoNav}>
           <div className={classes.LogoContainer}>
             <NavLink className={classes.Link} to="/">
-              <img className={classes.Logo} src={MitiniLogo}></img>
+              <Image className={classes.Logo} src={MitiniLogo}></Image>
             </NavLink>
           </div>
 

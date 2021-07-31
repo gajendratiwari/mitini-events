@@ -23,8 +23,11 @@ class Location extends Component {
                     <div className={classes.Column}>
                       <div className={classes.Content}>
                         <div className={classes.Text}>
-                          <h1 className={classes.Heading1}>{data.heading}</h1>
-                          <p className={classes.P1}>{data.details}</p>
+                          <h1 className={classes.Heading1}>LOCATION</h1>
+                          <p className={classes.P1}>
+                            We are located in Gharipatan and cater to Pokhara
+                            and surrounding regions.
+                          </p>
                         </div>
 
                         <div className={classes.Button}>
