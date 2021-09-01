@@ -1,3 +1,28 @@
 .FlexBox {
   padding: 2rem 5rem 3rem 5rem;
 }
+
+.Error {
+  color: red;
+  margin-top: 1em;
+}
+
+.RemainText {
+  width: 600px;
+  margin: auto;
+  text-align: left;
+}
+.StatusMessage {
+  opacity: 0;
+}
+.Success {
+  opacity: 1;
+  color: green;
+}
+.Failure {
+  opacity: 1;
+  color: red;
+}
+.Button {
+  padding: 2rem 5rem 3rem 5rem !important;
+}

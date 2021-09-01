@@ -24,7 +24,20 @@
   font-family: Apple Chancery, cursive;
   font-weight: 500px;
 }
-@media (max-width: 800px) {
+
+@media screen and (max-width: 992px) {
+  .Container {
+    flex-direction: column;
+  }
+  .LeftCol {
+    width: 100%;
+  }
+  .RightCol {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .Container {
     flex-direction: column;
   }

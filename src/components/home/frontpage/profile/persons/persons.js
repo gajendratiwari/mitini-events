@@ -23,7 +23,7 @@ class Person extends Component {
                         ></Image>
                       </div>
                       <p className={classes.Credit}>
-                        - <strong>{info.name},</strong>
+                        - <strong>{info.name}</strong>
                         <span>{info.position}</span>
                       </p>
                     </div>
