@@ -8,9 +8,11 @@
 }
 
 .RemainText {
-  width: 600px;
   margin: auto;
   text-align: left;
+  margin-left: 0%;
+  font-size: x-small;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 .StatusMessage {
   opacity: 0;

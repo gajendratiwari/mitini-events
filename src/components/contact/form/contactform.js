@@ -111,13 +111,13 @@ const ContactForm = () => {
           <input
             className="form-control"
             name="phone"
-            placeholder="Phone"
+            placeholder="Phone (e.g. +977 AB YXX XXX)"
             type="phone"
             autoComplete="off"
             {...register("phone", {
               required: "Required",
               pattern: {
-                value: /^(\+\d{1,3}[- ]?)?\d{10}$/,
+                value: /^\+(?:[0-9] ?){6,14}[0-9]$/,
               },
             })}
           />
@@ -176,7 +176,7 @@ const ContactForm = () => {
           <textarea
             className="form-control"
             name="message"
-            placeholder="Tell us a little more (are you after flowers,hire, styling or planning"
+            placeholder="Tell us a little more (are you after flowers,hire, styling or planning)"
             maxLength="1500"
             autoComplete="off"
             {...register("message", {
@@ -187,7 +187,9 @@ const ContactForm = () => {
             })}
           />
         </div>
-        <p className={classes.RemainText}>{messageCharsLeft}</p>
+        <p className={classes.RemainText}>
+          Remaining Text : {messageCharsLeft}
+        </p>
         <div className="form-group">
           <input
             className={classes.Button}
